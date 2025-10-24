@@ -1,9 +1,17 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: Roboto, Tahoma, Verdana, sans-serif;
 }
 
 h1{
   font-family: "Playfair Display", 'Times New Roman', Times, serif;
+}
+
+img{
+  height:50px;
+}
+
+.project{
+  background-color: lightblue;
 }
