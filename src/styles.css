@@ -1,4 +1,9 @@
 body {
   background-color: black;
   color: white;
+  font-family: Roboto, Tahoma, Verdana, sans-serif;
+}
+
+h1{
+  font-family: "Playfair Display", 'Times New Roman', Times, serif;
 }
