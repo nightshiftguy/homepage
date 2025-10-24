@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "first-deploy": "git branch gh-pages && git status",
+    "deploy": "git checkout gh-pages && git merge main --no-edit && webpack && git add dist -f && git commit -m \"Deployment commit\" && git subtree push --prefix dist origin gh-pages && git checkout main"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@eslint/js": "^9.20.0",
+    "babel-jest": "^30.1.2",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.20.1",
+    "globals": "^15.15.0",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^30.1.3",
+    "prettier": "3.5.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
