@@ -4,9 +4,10 @@ export default function createProjectsSection(projects) {
 
   const header = document.createElement("h1");
   header.textContent = "My work";
-  container.appendChild(header)
+  container.appendChild(header);
 
   const projectsContainer = document.createElement("div");
+  projectsContainer.setAttribute("class", "projects-container");
   projects.forEach((project) => {
     projectsContainer.appendChild(project);
   });

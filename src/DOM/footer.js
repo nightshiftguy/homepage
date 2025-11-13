@@ -11,7 +11,7 @@ function createPhone() {
   const container = document.createElement("div");
 
   const phoneIcon = document.createElement("img");
-  phoneIcon.setAttribute("class", "github-icon");
+  phoneIcon.setAttribute("class", "phone-icon");
   phoneIcon.src = phoneIconSrc;
   container.appendChild(phoneIcon);
 

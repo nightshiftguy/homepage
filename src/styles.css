@@ -1,17 +1,59 @@
+:root {
+  --global-padding: 100px 100px;
+  --main-background-clr: #0891b2;
+  --white-clr: #ffffff;
+  --black-clr: #060b04;
+  --gray-clr: #575655;
+}
+
 body {
-  background-color: white;
-  color: black;
+  margin: 0;
+  background-color: var(--white-clr);
+  color: var(--black-clr);
   font-family: Roboto, Tahoma, Verdana, sans-serif;
 }
 
-h1{
-  font-family: "Playfair Display", 'Times New Roman', Times, serif;
+h1,
+h2 {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: 400;
 }
 
-img{
-  height:50px;
+section p {
+  color: var(--gray-clr);
 }
 
-.project{
+.github-icon,
+.open-in-new-icon,
+.phone-icon,
+.linkedin-icon,
+.twitter-icon {
+  height: 2em;
+  width: 2em;
+}
+
+.projects,
+.about-me,
+.footer {
+  padding: var(--global-padding);
+}
+
+img {
+  height: 50px;
+}
+
+.projects-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project {
   background-color: lightblue;
+  height: 500px;
+}
+
+.footer {
+  color: var(--white-clr);
+  background-color: var(--main-background-clr);
 }

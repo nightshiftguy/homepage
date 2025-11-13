@@ -25,7 +25,7 @@ export default function createProject(
   container.setAttribute("class", "project");
 
   const screenshot = document.createElement("img");
-  screenshot.setAttribute("class", "github-icon");
+  screenshot.setAttribute("class", "screenshot-img");
   screenshot.src = screenshotSrc;
   container.appendChild(screenshot);
 
@@ -34,7 +34,7 @@ export default function createProject(
   const textContainerTop = document.createElement("div");
   textContainerTop.setAttribute("class", ".top");
 
-  const header = document.createElement("h1");
+  const header = document.createElement("h2");
   header.textContent = projectName;
   textContainerTop.appendChild(header);
 
