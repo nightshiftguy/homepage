@@ -97,14 +97,21 @@ img {
   gap:20px;
 }
 
+/*projects*/
 .projects-container {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
-.project {
-  height: 500px;
+.screenshot-img{
+  width:100%;
+  height:auto;
+  object-fit: cover;
+}
+
+.project{
+  padding-bottom:30px;
 }
 
 .footer {
