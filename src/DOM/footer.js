@@ -9,6 +9,7 @@ import emailIconSrc from "../img/icons/email.svg";
 
 function createPhone() {
   const container = document.createElement("div");
+  container.setAttribute("class", "phone");
 
   const phoneIcon = document.createElement("img");
   phoneIcon.setAttribute("class", "phone-icon");
@@ -23,7 +24,8 @@ function createPhone() {
 }
 
 function createMail() {
-    const container = document.createElement("div");
+  const container = document.createElement("div");
+  container.setAttribute("class", "mail");
 
   const emailIcon = document.createElement("img");
   emailIcon.setAttribute("class", "github-icon");
@@ -39,6 +41,7 @@ function createMail() {
 
 function createIconsContainer() {
   const iconsContainer = document.createElement("div");
+  iconsContainer.setAttribute("class", "icons-container");
 
   const githubIcon = document.createElement("img");
   githubIcon.setAttribute("class", "github-icon");
@@ -75,6 +78,7 @@ export default function createFooter() {
   const address = document.createElement("p");
   //use innerHTML because content is trusted
   address.innerHTML = "1234 Random Road<br/>Warsaw Poland";
+  address.setAttribute("class", "address");
   left.appendChild(address);
 
   left.appendChild(createPhone());
@@ -84,6 +88,7 @@ export default function createFooter() {
   container.appendChild(left);
 
   const footerImg = document.createElement("img");
+  footerImg.setAttribute("class", "footer-img");
   footerImg.src = footerImgSrc;
   container.appendChild(footerImg);
 
