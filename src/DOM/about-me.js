@@ -1,10 +1,11 @@
 import mainImgSrc from "../img/main-img.jpg";
-import githubIconSrc from "../img/icons/github.svg"
-import linkedinImgSrc from "../img/icons/linkedin.svg"
-import twitterIconSrc from "../img/icons/twitter.svg"
+import githubIconSrc from "../img/icons/github.svg";
+import linkedinImgSrc from "../img/icons/linkedin.svg";
+import twitterIconSrc from "../img/icons/twitter.svg";
 
-function createIconsContainer(){
-    const iconsContainer = document.createElement("div");
+function createIconsContainer() {
+  const iconsContainer = document.createElement("div");
+  iconsContainer.setAttribute("class","icons-container")
 
   const githubIcon = document.createElement("img");
   githubIcon.setAttribute("class", "github-icon");
@@ -27,16 +28,22 @@ export default function createAboutMeSection() {
   const container = document.createElement("section");
   container.setAttribute("class", "about-me");
 
+  const aboutMeBackground = document.createElement("div");
+  aboutMeBackground.setAttribute("class", "about-me-background");
+  container.appendChild(aboutMeBackground);
+
   const mainImg = document.createElement("img");
+  mainImg.setAttribute("class", "about-me-img");
   mainImg.src = mainImgSrc;
   container.appendChild(mainImg);
 
   const myName = document.createElement("h1");
   myName.textContent = "Jan Goluch";
-  myName.setAttribute("class", "main-img");
+  myName.setAttribute("class", "my-name");
   container.appendChild(myName);
 
   const textContainer = document.createElement("div");
+  textContainer.setAttribute("class", "about-me-text-container");
   const header = document.createElement("h1");
   header.textContent = "About me";
   textContainer.appendChild(header);

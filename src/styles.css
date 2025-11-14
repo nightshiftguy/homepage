@@ -1,3 +1,4 @@
+/*global styling*/
 :root {
   --global-padding: 100px 100px;
   --main-background-clr: #0891b2;
@@ -42,6 +43,60 @@ img {
   height: 50px;
 }
 
+.about-me-text-container,
+.project,
+.about-me-background{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*about me section*/
+
+.about-me-img{
+  position:absolute;
+  left:200px;
+  top:225px;
+
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  height:300px;
+  width:150px;
+}
+
+.my-name{
+  color:var(--white-clr);
+  position:absolute;
+  left:200px;
+  top:275px;
+
+  transform-origin: center;
+  transform: translate(-50%, 0%);
+  width:100px;
+}
+
+.about-me-text-container{
+  background-color: var(--white-clr);
+  padding:20px 30px 20px 200px;
+}
+
+.about-me-background{
+  position:absolute;
+  top:300px;
+  left:0;
+
+  transform-origin: center;
+  transform: translate(0, -100%) skewY(-10deg);
+  height:700px;
+  width:100%;
+  background-color: var(--main-background-clr);
+  z-index: -1;
+}
+
+.about-me .icons-container{
+  display: flex;
+  justify-content: flex-end;
+  gap:20px;
+}
+
 .projects-container {
   display: grid;
   gap: 30px;
@@ -49,7 +104,6 @@ img {
 }
 
 .project {
-  background-color: lightblue;
   height: 500px;
 }
 
