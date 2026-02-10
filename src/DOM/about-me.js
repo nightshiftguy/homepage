@@ -32,18 +32,22 @@ export default function createAboutMeSection() {
   aboutMeBackground.setAttribute("class", "about-me-background");
   container.appendChild(aboutMeBackground);
 
+  const textContainer = document.createElement("div");
+  textContainer.setAttribute("class", "about-me-text-container");
+
+  const imgWrapper = document.createElement("div");
+  imgWrapper.setAttribute("class", "about-me-img-wrapper");
   const mainImg = document.createElement("img");
   mainImg.setAttribute("class", "about-me-img");
   mainImg.src = mainImgSrc;
-  container.appendChild(mainImg);
+  imgWrapper.appendChild(mainImg);
 
   const myName = document.createElement("h1");
   myName.textContent = "Jan Goluch";
   myName.setAttribute("class", "my-name");
-  container.appendChild(myName);
+  imgWrapper.appendChild(myName);
+  textContainer.append(imgWrapper);
 
-  const textContainer = document.createElement("div");
-  textContainer.setAttribute("class", "about-me-text-container");
   const header = document.createElement("h1");
   header.textContent = "About me";
   textContainer.appendChild(header);

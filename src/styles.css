@@ -40,10 +40,6 @@ section p {
   padding: var(--global-padding);
 }
 
-img {
-  height: 50px;
-}
-
 .about-me-text-container,
 .project,
 .about-me-background{
@@ -51,32 +47,29 @@ img {
 }
 
 /*about me section*/
-
-.about-me-img{
-  position:absolute;
-  left:200px;
-  top:225px;
-
-  transform-origin: center;
-  transform: translate(-50%, -50%);
-  height:300px;
-  width:150px;
-}
-
 .my-name{
   color:var(--white-clr);
   position:absolute;
-  left:200px;
-  top:275px;
-
   transform-origin: center;
   transform: translate(-50%, 0%);
   width:100px;
 }
 
+.about-me-img-wrapper{
+  display:block;
+  height:260px;
+}
+
+.about-me-img{
+    position:absolute;
+    transform-origin: center;
+    height:300px;
+    width:200px;
+}
+
 .about-me-text-container{
   background-color: var(--white-clr);
-  padding:20px 30px 20px 200px;
+  padding:20px 30px 20px 30px;
 }
 
 .about-me-background{
@@ -102,7 +95,7 @@ img {
 .projects-container {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .screenshot-img{
@@ -140,4 +133,98 @@ img {
   max-width: 100%;
   height:auto;
   object-fit: contain;
+}
+
+@media (min-width: 751px){
+   .about-me-img{
+    left:170px;
+    top:225px;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .about-me-img-wrapper{
+    float:left;
+    width: 160px;
+  }
+
+  .my-name{
+    left:170px;
+    top:275px;
+  }
+}
+
+@media (max-width: 750px) {
+  :root {
+    --global-padding: 30px 30px;
+  }
+
+  /* about me */
+  .about-me-img{
+    left:50%;
+    top:50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .about-me-img-wrapper{
+    position: relative;
+    height: 300px;
+  }
+  .my-name{
+    left:50%;
+    bottom: 0;
+  }
+
+  .about-me-background{
+    display: none;
+  }
+
+  .about-me-text-container{
+    box-shadow:none;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .about-me .icons-container{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+  }
+
+  /*projects*/
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  /*footer*/
+  .footer {
+    padding:0;
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+  }
+
+  .phone, .mail{
+    display: none;
+  }
+
+  .footer .icons-container{
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    gap:20px;
+  }
+
+  .footer > div{
+    padding:var(--global-padding);
+  }
+
+  .footer-img{
+    max-width: 100%;
+    height:auto;
+    object-fit: contain;
+  }
 }
