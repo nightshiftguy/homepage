@@ -14,16 +14,52 @@ import createProject from "./DOM/project";
 
 const container = document.querySelector(".container");
 
-const aboutMeSection = createAboutMeSection();
+const aboutMeSection = createAboutMeSection("https://github.com/nightshiftguy","https://www.linkedin.com/in/jan-goluch-01734b3b1/");
 const projectsSection = createProjectsSection([
-  createProject("Battleship", "Try to destroy all enemy ships", battleshipProjectImgSrc),
-  createProject("Library", "Manage library collection", libraryProjectImgSrc),
-  createProject("Restaurant page", "Simple restaurant page", restaurantPageProjectImgSrc),
-  createProject("Tic tac toe", "Simple game for two players", ticTacToeProjectImgSrc),
-  createProject("Todo list", "Create and complete your todos", todoListProjectImgSrc),
-  createProject("Weather app", "Check weather from visual crossing API", weatherAppProjectImgSrc),
+  createProject(
+    "Battleship",
+    "Try to destroy all enemy ships",
+    "https://nightshiftguy.github.io/battleship/",
+    "https://github.com/nightshiftguy/battleship",
+    battleshipProjectImgSrc,
+  ),
+  createProject(
+    "Library",
+    "Manage library collection",
+    "https://nightshiftguy.github.io/books-js-exercise/",
+    "https://github.com/nightshiftguy/books-js-exercise",
+    libraryProjectImgSrc,
+  ),
+  createProject(
+    "Restaurant page",
+    "Simple restaurant page",
+    "https://nightshiftguy.github.io/restaurant-page/",
+    "https://github.com/nightshiftguy/restaurant-page",
+    restaurantPageProjectImgSrc,
+  ),
+  createProject(
+    "Tic tac toe",
+    "Simple game for two players",
+    "https://nightshiftguy.github.io/tic-tac-toe/",
+    "https://github.com/nightshiftguy/tic-tac-toe",
+    ticTacToeProjectImgSrc,
+  ),
+  createProject(
+    "Todo list",
+    "Create and complete your todos",
+    "https://nightshiftguy.github.io/todo-list/",
+    "https://github.com/nightshiftguy/todo-list",
+    todoListProjectImgSrc,
+  ),
+  createProject(
+    "Weather app",
+    "Check weather from visual crossing API",
+    "https://nightshiftguy.github.io/weather-app/",
+    "https://github.com/nightshiftguy/weather-app",
+    weatherAppProjectImgSrc,
+  ),
 ]);
-const footer = createFooter();
+const footer = createFooter("https://github.com/nightshiftguy","https://www.linkedin.com/in/jan-goluch-01734b3b1/");
 
 container.appendChild(aboutMeSection);
 container.appendChild(projectsSection);
