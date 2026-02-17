@@ -26,6 +26,7 @@ section p {
 }
 
 .github-icon,
+.email-icon,
 .open-in-new-icon,
 .phone-icon,
 .linkedin-icon,
@@ -52,7 +53,8 @@ section p {
   position:absolute;
   transform-origin: center;
   transform: translate(-50%, 0%);
-  width:100px;
+  text-align:center;
+  width:200px;
 }
 
 .about-me-img-wrapper{
@@ -63,8 +65,7 @@ section p {
 .about-me-img{
     position:absolute;
     transform-origin: center;
-    height:300px;
-    width:200px;
+    height:270px;
 }
 
 .about-me-text-container{
@@ -106,6 +107,17 @@ section p {
 
 .project{
   padding-bottom:30px;
+  transition: all 250ms ease-in-out;
+}
+
+.project:first-child h2::after{
+  color:rgb(231, 6, 6);
+  content:" - new project";
+}
+
+.project:hover{
+  transform: translateY(-10px);
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*footer*/
@@ -137,7 +149,7 @@ section p {
 
 @media (min-width: 751px){
    .about-me-img{
-    left:170px;
+    left:200px;
     top:225px;
 
     transform: translate(-50%, -50%);
@@ -145,11 +157,11 @@ section p {
 
   .about-me-img-wrapper{
     float:left;
-    width: 160px;
+    width: 210px;
   }
 
   .my-name{
-    left:170px;
+    left:200px;
     top:275px;
   }
 }
@@ -207,8 +219,12 @@ section p {
     flex-direction: column;
   }
 
+  footer p{
+    text-align: center;
+  }
+
   .phone, .mail{
-    display: none;
+    justify-content: center;
   }
 
   .footer .icons-container{

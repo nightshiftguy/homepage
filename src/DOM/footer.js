@@ -27,12 +27,12 @@ function createMail() {
   container.setAttribute("class", "mail");
 
   const emailIcon = document.createElement("img");
-  emailIcon.setAttribute("class", "github-icon");
+  emailIcon.setAttribute("class", "email-icon");
   emailIcon.src = emailIconSrc;
   container.appendChild(emailIcon);
 
   const email = document.createElement("p");
-  email.textContent = "my.mail@gmail.com";
+  email.textContent = "jgoluch.it@gmail.com";
   container.appendChild(email);
 
   return container;
@@ -90,7 +90,7 @@ export default function createFooter(githubLink, linkedinLink) {
   // left.appendChild(address);
 
   // left.appendChild(createPhone());
-  // left.appendChild(createMail());
+  left.appendChild(createMail());
   left.appendChild(createIconsContainer(githubLink, linkedinLink));
 
   container.appendChild(left);

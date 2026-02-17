@@ -6,6 +6,7 @@ import restaurantPageProjectImgSrc from "./img/projects-screenshots/restaurant-p
 import ticTacToeProjectImgSrc from "./img/projects-screenshots/tic-tac-toe.png";
 import todoListProjectImgSrc from "./img/projects-screenshots/todo-list.png";
 import weatherAppProjectImgSrc from "./img/projects-screenshots/weather-app.png";
+import contactListProjectImgSrc from "./img/projects-screenshots/contact-list.png"
 
 import createAboutMeSection from "./DOM/about-me";
 import createProjectsSection from "./DOM/projects";
@@ -14,8 +15,15 @@ import createProject from "./DOM/project";
 
 const container = document.querySelector(".container");
 
-const aboutMeSection = createAboutMeSection("https://github.com/nightshiftguy","https://www.linkedin.com/in/jan-goluch-01734b3b1/");
+const aboutMeSection = createAboutMeSection("https://github.com/nightshiftguy","https://www.linkedin.com/in/jan-goluch");
 const projectsSection = createProjectsSection([
+  createProject(
+    "Contact List",
+    "Keep all your contacts in one place",
+    "https://app.contact-list.nightguys-projects.top/",
+    "https://github.com/nightshiftguy/contact-list",
+    contactListProjectImgSrc,
+  ),
   createProject(
     "Battleship",
     "Try to destroy all enemy ships",
@@ -24,6 +32,27 @@ const projectsSection = createProjectsSection([
     battleshipProjectImgSrc,
   ),
   createProject(
+    "Todo list",
+    "Create and complete your todos",
+    "https://nightshiftguy.github.io/todo-list/",
+    "https://github.com/nightshiftguy/todo-list",
+    todoListProjectImgSrc,
+  ),
+  createProject(
+    "Tic tac toe",
+    "Simple game for two players",
+    "https://nightshiftguy.github.io/tic-tac-toe/",
+    "https://github.com/nightshiftguy/tic-tac-toe",
+    ticTacToeProjectImgSrc,
+  ),
+  createProject(
+    "Weather app",
+    "Check weather from visual crossing API",
+    "https://nightshiftguy.github.io/weather-app/",
+    "https://github.com/nightshiftguy/weather-app",
+    weatherAppProjectImgSrc,
+  ),
+    createProject(
     "Library",
     "Manage library collection",
     "https://nightshiftguy.github.io/books-js-exercise/",
@@ -37,29 +66,8 @@ const projectsSection = createProjectsSection([
     "https://github.com/nightshiftguy/restaurant-page",
     restaurantPageProjectImgSrc,
   ),
-  createProject(
-    "Tic tac toe",
-    "Simple game for two players",
-    "https://nightshiftguy.github.io/tic-tac-toe/",
-    "https://github.com/nightshiftguy/tic-tac-toe",
-    ticTacToeProjectImgSrc,
-  ),
-  createProject(
-    "Todo list",
-    "Create and complete your todos",
-    "https://nightshiftguy.github.io/todo-list/",
-    "https://github.com/nightshiftguy/todo-list",
-    todoListProjectImgSrc,
-  ),
-  createProject(
-    "Weather app",
-    "Check weather from visual crossing API",
-    "https://nightshiftguy.github.io/weather-app/",
-    "https://github.com/nightshiftguy/weather-app",
-    weatherAppProjectImgSrc,
-  ),
 ]);
-const footer = createFooter("https://github.com/nightshiftguy","https://www.linkedin.com/in/jan-goluch-01734b3b1/");
+const footer = createFooter("https://github.com/nightshiftguy","https://www.linkedin.com/in/jan-goluch");
 
 container.appendChild(aboutMeSection);
 container.appendChild(projectsSection);

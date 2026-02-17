@@ -60,7 +60,7 @@ export default function createAboutMeSection(githubLink, linkedinLink) {
   textContainer.appendChild(header);
   const text = document.createElement("p");
   text.textContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed justo non eros aliquet pharetra. Phasellus malesuada faucibus neque, id sodales augue. Maecenas commodo nunc dui, vel ultricies erat aliquet id. Vivamus dictum placerat malesuada. Ut lobortis egestas elementum. Pellentesque fermentum enim ut ligula efficitur, quis iaculis augue consequat. Donec ut mollis felis, eget iaculis lectus. Suspendisse scelerisque pharetra lacus, eget venenatis nulla. Nam iaculis diam eu eleifend facilisis. Mauris blandit metus turpis, quis commodo nisl vehicula vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat porttitor metus id malesuada. Praesent nunc nisl, posuere non erat eu, varius malesuada nunc. Quisque eleifend lectus elit, vitae consectetur enim scelerisque nec.";
+    "I’m a Computer Science student at the Uniwersytet Komisji Edukacji Narodowej in Kraków, specializing in system administration. I build web applications using React on the frontend and Spring Boot on the backend, focusing on clear data flow, well-structured APIs, and maintainable code. I value strong fundamentals and prefer understanding how things work internally. I develop personal projects to test ideas in practice. I’m aiming to grow further through hands-on projects and practical software development experience.";
   textContainer.appendChild(text);
 
   textContainer.appendChild(createIconsContainer(githubLink, linkedinLink));
