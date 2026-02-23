@@ -41,6 +41,10 @@ section p {
   padding: var(--global-padding);
 }
 
+.project{
+  border-top:5px solid var(--main-background-clr);
+}
+
 .about-me-text-container,
 .project,
 .about-me-background{

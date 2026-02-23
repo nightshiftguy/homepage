@@ -7,6 +7,7 @@ import ticTacToeProjectImgSrc from "./img/projects-screenshots/tic-tac-toe.png";
 import todoListProjectImgSrc from "./img/projects-screenshots/todo-list.png";
 import weatherAppProjectImgSrc from "./img/projects-screenshots/weather-app.png";
 import contactListProjectImgSrc from "./img/projects-screenshots/contact-list.png"
+import memoryCardProjectImgSrc from "./img/projects-screenshots/memory-card.png"
 
 import createAboutMeSection from "./DOM/about-me";
 import createProjectsSection from "./DOM/projects";
@@ -23,6 +24,13 @@ const projectsSection = createProjectsSection([
     "https://app.contact-list.nightguys-projects.top/",
     "https://github.com/nightshiftguy/contact-list",
     contactListProjectImgSrc,
+  ),
+  createProject(
+    "Memory cards",
+    "Click all cards only once",
+    "https://memory-card-steel.vercel.app/",
+    "https://github.com/nightshiftguy/memory-card",
+    memoryCardProjectImgSrc,
   ),
   createProject(
     "Battleship",
