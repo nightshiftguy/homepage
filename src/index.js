@@ -26,13 +26,6 @@ const projectsSection = createProjectsSection([
     contactListProjectImgSrc,
   ),
   createProject(
-    "Memory cards",
-    "Click all cards only once",
-    "https://memory-card-steel.vercel.app/",
-    "https://github.com/nightshiftguy/memory-card",
-    memoryCardProjectImgSrc,
-  ),
-  createProject(
     "Battleship",
     "Try to destroy all enemy ships",
     "https://nightshiftguy.github.io/battleship/",
@@ -52,6 +45,13 @@ const projectsSection = createProjectsSection([
     "https://nightshiftguy.github.io/tic-tac-toe/",
     "https://github.com/nightshiftguy/tic-tac-toe",
     ticTacToeProjectImgSrc,
+  ),
+    createProject(
+    "Memory cards",
+    "Click all cards only once",
+    "https://memory-card-steel.vercel.app/",
+    "https://github.com/nightshiftguy/memory-card",
+    memoryCardProjectImgSrc,
   ),
   createProject(
     "Weather app",

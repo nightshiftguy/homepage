@@ -63,7 +63,7 @@ section p {
 
 .about-me-img-wrapper{
   display:block;
-  height:260px;
+  height:250px;
 }
 
 .about-me-img{
@@ -154,7 +154,7 @@ section p {
 @media (min-width: 751px){
    .about-me-img{
     left:200px;
-    top:225px;
+    top:215px;
 
     transform: translate(-50%, -50%);
   }
