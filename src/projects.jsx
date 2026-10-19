@@ -5,9 +5,17 @@ import ticTacToeProjectImgSrc from "./img/projects-screenshots/tic-tac-toe.png";
 import todoListProjectImgSrc from "./img/projects-screenshots/todo-list.png";
 import weatherAppProjectImgSrc from "./img/projects-screenshots/weather-app.png";
 import contactListProjectImgSrc from "./img/projects-screenshots/contact-list.png";
+import sparkSocialAppProjecImgSrc from "./img/projects-screenshots/spark-social-app.png"
 import memoryCardProjectImgSrc from "./img/projects-screenshots/memory-card.png";
 
 const projects = [
+  {
+    title: "Spark Social App",
+    description: "Create posts, comment and like",
+    liveLink: "https://app.spark-social-app.nightguys-projects.top/",
+    githubLink: "https://github.com/nightshiftguy/spark-social-app",
+    imgSrc: sparkSocialAppProjecImgSrc,
+  },
   {
     title: "Contact List",
     description: "Keep all your contacts in one place",
